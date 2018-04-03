@@ -16,7 +16,7 @@ import java.net.*;
 import java.util.*;
 public class JavaApplication1 {
     public static void main(String args[]) throws Exception {
-        URLConnection uc = new URL("https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=3a814702625b307d181ce59815565b49&per_page=10&text=Hyderabad").openConnection();
+        URLConnection uc = new URL("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=3a814702625b307d181ce59815565b49&per_page=1&text=akhil reddy").openConnection();
         DataInputStream dis = new DataInputStream(uc.getInputStream());
         FileWriter fw = new FileWriter(new File("E:\\\\Hello1.xml"));
         String nextline;
